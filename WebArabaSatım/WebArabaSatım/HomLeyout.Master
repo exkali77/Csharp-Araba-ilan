@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomLeyout.master.cs" Inherits="WebArabaSatım.HomLeyout" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head runat="server">
+    <title>ArabaSat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar  navbar-inverse">
+     <div class="container-fluid">
+         <div class=" navbar-header" href="#">
+         <a class="navbar-brand" href="#">Araba Satım</a> 
+             </div>
+         <ul class="nav navbar-nav">
+             <li class="active"><a href="HomLeyout.aspx">Ev</a></li>
+                     <li><a href="AddCar.aspx">Araç Listele</a></li>
+                     <li><a href="HomCntac.aspx">İletişim</a></li>
+                 <li ><a href="HomAbout.aspx">Hakımızda</a> </li>
+         </ul>
+         <ul class="nav navbar-nav  navbar-right">
+             <li><a href="Loguot.aspx"><span class="glyphicon glyphicon-log-in"></span>Çıkış Yap</a></li>
+
+
+         </ul>
+     </div>
+    </nav>
+    
+        <div style="left: -2px; top: -3px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="container">
+
+
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+  
+</body>
+</html>
